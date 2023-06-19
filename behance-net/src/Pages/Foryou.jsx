@@ -144,7 +144,7 @@ const ForYou=()=>{
   </Stack>
       </div>
       <div style={{marginTop:"5px"}}>
-        <SimpleGrid columns={[2, null, 3]} spacing='40px' width="95%" margin="auto">
+        <SimpleGrid columns={[2, null, 3]} spacing='40px' width="94%" margin="auto">
           {
             data.map((ele)=>{
               return <div>
