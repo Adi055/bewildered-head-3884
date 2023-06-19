@@ -7,12 +7,13 @@ import {
     HStack,
     IconButton,
     useBreakpointValue,
-    Image
+    Image,
+    
   } from '@chakra-ui/react'
   import { FiMenu } from 'react-icons/fi'
   import logo from "../logo.png"
- 
-import { Link } from "react-router-dom"
+ import { Link  } from 'react-router-dom'
+
 
 let Navbar=()=>{
 
@@ -22,7 +23,7 @@ let Navbar=()=>{
         <Box as="nav" bg="bg.surface" boxShadow="sm">
           <Container py={{ base: '4', lg: '2' }} mr='800px'>
             <HStack spacing="1" justify="space-between">
-             <Image src={logo} width="60px"/>
+           <img src={logo} width="60px"/>
               {isDesktop ? (
                 <Flex justify="space-between" flex="1">
                   <ButtonGroup variant="text" colorScheme="gray" spacing="0" >
@@ -32,8 +33,8 @@ let Navbar=()=>{
                   </ButtonGroup>
                   <HStack spacing="2" ml='450px'>
                     
-                    <Button variant="tertiary" bg="rgb(210, 248, 248)" color="blue"  borderRadius="1.5em" width="7vw" height="2.7vw">Log in</Button>
-                    <Button variant="primary"  bg="blue" color="white" borderRadius="1.5em" width="7.5vw" height="2.7vw">Sign up</Button>
+                    <Link to="/signin"><Button variant="tertiary" bg="rgb(210, 248, 248)" color="blue"  borderRadius="1.5em" width="7vw" height="2.7vw">Log in</Button></Link>
+                    <Link to="/signup"><Button variant="primary"  bg="blue" color="white" borderRadius="1.5em" width="7.5vw" height="2.7vw">Sign up</Button></Link>
                     <br />
                     <Button variant="primary" border='1px solid rgb(177, 170, 170)'   borderRadius="1.5em" width="7.5vw" height="2.7vw">Free Trial</Button>
                   </HStack> 

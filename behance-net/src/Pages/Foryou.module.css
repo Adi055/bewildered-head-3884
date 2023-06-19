@@ -1,0 +1,29 @@
+.dropmenu>.box1{
+    display: none;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  background-color:rgb(255, 255, 255);
+  width: 360px;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  padding: 15px 16px;
+  z-index: 1;
+  border-radius: 0.4em;
+}
+.mainbox1:hover .dropmenu >div{
+    display: inline; 
+}
+.dropmenu{
+    position: absolute;
+    right: 250px;
+
+}
+.first{
+    position: relative;
+    bottom: 60px;
+    left: 28px;
+}
+.first>h1{
+    font-size: 20px;
+}

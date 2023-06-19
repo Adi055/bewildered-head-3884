@@ -6,3 +6,12 @@
     border-radius: 1em;
     width: 92vw;
 }
+.footer{
+   height: 200px;
+}
+.footer>h3{
+    position:  relative;
+    top: 60px;
+    margin-left: 330px;
+    color: black;
+}
